@@ -132,40 +132,7 @@ public class Main {
         }
     }
 
-    // private static void insertarDepartamentoConIdentity(Departamento
-    // departamento) {
-    // DataSource ds = DBCPDataSourceUtil.getDataSource();
 
-    // try (
-    // Connection conexion = ds.getConnection(); PreparedStatement pstmt =
-    // conexion.prepareStatement(
-    // "SET IDENTITY_INSERT DEPT ON; \n"
-    // + "INSERT INTO [dbo].[DEPT](DEPTNO, DNAME, LOC) VALUES(?, ?, ?);\n"
-    // + " SET IDENTITY_INSERT DEPT OFF");) {
-
-    // pstmt.setInt(1, departamento.getDeptno());
-    // pstmt.setString(2, departamento.getDeptName());
-    // pstmt.setString(3, departamento.getLoc());
-
-    // int result = pstmt.executeUpdate();
-
-    // // Devolverá 0 para las sentencias SQL que no devuelven nada o el número de
-    // filas afectadas
-    // System.out.println("");
-    // System.out.println("--------------------------------------------------------------------------------------------------------------------");
-
-    // System.out.println("El número de filas afectadas es: " + result);
-
-    // System.out.println("--------------------------------------------------------------------------------------------------------------------");
-
-    // System.out.println("--------------------------------------------------------------------------------------------------------------------");
-
-    // } catch (SQLException ex) {
-    // ex.printStackTrace();
-    // System.err.println("Ha ocurrido una excepción: " + ex.getMessage());
-
-    // }
-    // }
 
     private static void insertarDepartamento(Departamento departamento) {
         DataSource ds = DBCPDataSourceUtil.getDataSource();
